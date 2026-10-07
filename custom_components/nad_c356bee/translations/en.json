@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "NAD C 356BEE",
+        "description": "Select the serial port connected to the amplifier.",
+        "data": {
+          "device": "Serial port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the amplifier. Check the proxy, wiring and power.",
+      "invalid_device": "The connected device is not a NAD C 356BEE."
+    },
+    "abort": {
+      "already_configured": "This serial port is already configured."
+    }
+  },
+  "entity": {
+    "switch": {
+      "speakera": {
+        "name": "Speaker A"
+      },
+      "speakerb": {
+        "name": "Speaker B"
+      },
+      "tape1": {
+        "name": "Tape monitor"
+      }
+    }
+  }
+}

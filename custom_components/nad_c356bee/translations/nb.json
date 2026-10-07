@@ -1,0 +1,33 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "NAD C 356BEE",
+        "description": "Velg serieporten som er koblet til forsterkeren.",
+        "data": {
+          "device": "Serieport"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan ikke koble til forsterkeren. Kontroller proxy, kabling og strøm.",
+      "invalid_device": "Den tilkoblede enheten er ikke en NAD C 356BEE."
+    },
+    "abort": {
+      "already_configured": "Denne serieporten er allerede konfigurert."
+    }
+  },
+  "entity": {
+    "switch": {
+      "speakera": {
+        "name": "Høyttaler A"
+      },
+      "speakerb": {
+        "name": "Høyttaler B"
+      },
+      "tape1": {
+        "name": "Tape Monitor"
+      }
+    }
+  }
+}

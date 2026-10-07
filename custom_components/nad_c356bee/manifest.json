@@ -1,0 +1,19 @@
+{
+  "domain": "nad_c356bee",
+  "name": "NAD C 356BEE",
+  "version": "0.1.0",
+  "config_flow": true,
+  "dependencies": [
+    "usb"
+  ],
+  "after_dependencies": [
+    "esphome"
+  ],
+  "documentation": "https://nadelectronics.com/product/c-356bee-stereo-integrated-amplifier/",
+  "codeowners": [],
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "requirements": [
+    "serialx==1.1.1"
+  ]
+}

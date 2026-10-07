@@ -1,0 +1,39 @@
+# ESP32 + 3.3 V compatible RS-232 transceiver (for example MAX3232).
+# Adapt board and GPIO pins to your hardware.
+esphome:
+  name: nad-serial-proxy
+
+esp32:
+  board: esp32dev
+  framework:
+    type: esp-idf
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+logger:
+  baud_rate: 0
+
+api:
+  encryption:
+    key: !secret nad_api_key
+
+ota:
+  - platform: esphome
+    password: !secret ota_password
+
+uart:
+  id: nad_uart
+  tx_pin: GPIO17
+  rx_pin: GPIO16
+  baud_rate: 115200
+  data_bits: 8
+  parity: NONE
+  stop_bits: 1
+
+serial_proxy:
+  - id: nad_proxy
+    uart_id: nad_uart
+    name: NAD RS232
+    port_type: RS232
